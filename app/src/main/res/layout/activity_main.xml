@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/numberWithViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_above="@+id/txtwithout"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With ViewModel:"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/numberWithViewModel"/>
+
+    <TextView
+        android:id="@+id/number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtwithout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Without ViewModel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_above="@+id/number_text"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add +1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/number_text"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
